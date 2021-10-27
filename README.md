@@ -1,39 +1,40 @@
-# Bioinformatica Aplicada a Imunologia
-## Analise de Repertorio (AIRR-Seq)
+# Bioinformática Aplicada à Imunologia
+## Análise de Repertório (AIRR-Seq)
 
-## Pre-requisitos:
-- [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administracao de pacotes e ambientes, de codigo aberto, que possibilita a instalacao e facil execucao de pacotes de softwares e suas respectivas dependencias. 
-- [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR e uma ferramenta rapida e precisa para analise de sequenciamento de receptores de linfocitos B e T.
-- [VDJviz](https://vdjviz.cdr3.net/): VDJviz e um visualizador browser de caracteristicas e parametros de dados de AIRR-Seq. 
-## Instalacao Conda:
-As instrucoes basicas para instalacao e executacao de ambiente conda pode ser encontrada [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas basicas serao descritas a seguir:
+## Pré-requisitos:
+- [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
+- [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
+- [VDJviz](https://vdjviz.cdr3.net/): VDJviz é um visualizador browser de caracteristicas e parâmetros de dados de AIRR-Seq. 
+## Instalação Conda:
+As instruções básicas para instalação e executação de ambientes conda pode ser encontradas [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas básicas serão descritas a seguir:
 - Abra o terminal e digite:
 ```sh
 cd 
 cd/tmp
 curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh
 ```
-- Ainda dentro do diretorio ```/tmp```digite:
+- Ainda dentro do diretório ```/tmp```digite:
 ```sh
 bash anaconda.sh 
 ```
 Aperte ```ENTER``` ou ```yes``` toda vez que for requerido.
-- Para ativar a instalacao escreva:
+- Para ativar a instalação escreva:
 ```sh
 source ~/.bashrc
 ```
-Apos o comando, sera criado automaticamente um ambiente ```(base)``` 
+Após o comando, sera criado automaticamente um ambiente ```(base)``` 
 
 ## Criacao do ambiente
-- Devera ser criado um abiente especifico onde as ferramentas necessarias serao instaladas:
+- Deverá ser criado um abiente específico onde as ferramentas necessárias serão instaladas:
 ```sh
-conda activate --name {nome_ambiente} python=3
+cd # Voltar para o diretório '''/home/username'''
+conda activate --name {nome_ambiente} python=3 -y
 ```
 - Para entrar no ambiente:
 ```sh
 conda activate {nome_ambiente}
 ```
-- Para instalar os softwares necessarios:
+- Para instalar os softwares necessários:
 ```sh
 conda install -c bioconda mixcr sra-tools 
 ```
