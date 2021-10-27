@@ -6,7 +6,7 @@
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
 - [VDJviz](https://vdjviz.cdr3.net/): VDJviz é um visualizador browser de caracteristicas e parâmetros de dados de AIRR-Seq. 
 ## Instalação Conda:
-As instruções básicas para instalação e executação de ambientes conda pode ser encontradas [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas básicas serão descritas a seguir:
+As instruções para instalação e executação de ambientes conda pode ser encontradas [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas básicas serão descritas a seguir:
 - Abra o terminal e digite:
 ```sh
 cd 
@@ -22,10 +22,10 @@ Aperte ```ENTER``` ou ```yes``` toda vez que for requerido.
 ```sh
 source ~/.bashrc
 ```
-Após o comando, sera criado automaticamente um ambiente ```(base)``` 
+Após o comando, será criado automaticamente um ambiente ```(base)``` 
 
-## Criacao do ambiente
-- Deverá ser criado um abiente específico onde as ferramentas necessárias serão instaladas:
+## Criação do ambiente para análises
+- Deverá ser criado um abiente específico, onde as ferramentas serão instaladas:
 ```sh
 cd # Voltar para o diretório '''/home/username'''
 conda activate --name {nome_ambiente} python=3 -y
@@ -36,5 +36,15 @@ conda activate {nome_ambiente}
 ```
 - Para instalar os softwares necessários:
 ```sh
-conda install -c bioconda mixcr sra-tools 
+conda install -c imperial-college-research-computing mixcr -y
+conda install -c bioconda sra-tools -y
 ```
+## Coleta dos dados 
+Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados SRA do NCBI será acessado para coletar os dados de sequenciamento. O número de acesso do projeto é '''SRX8505845''' e será analisado a amostra '''SRR11961719'''. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresenta melhora no quadro clínico. O download da amostra é descrita a seguir:
+```sh
+mkdir airrseq
+cd airrseq
+fasterq-dump --split-files SRR11961719 
+```
+
+
