@@ -58,7 +58,11 @@ fasterq-dump --split-files SRR11961719
 - Uma vez baixado, se obterá apenas um subconjunto dessa amostra total:
 ```sh
 FALAR COM WALDEYR PRA PEGAR O CÓDIGO
-```sh
+```
+- A coleta de apenas um porção aleatória da amostra em questão tem dois propósitos principais:
+1. Facilitar a análise dos dados principalmente para computadores de baixa capacidade de processamento.
+2. A ferramenta de visualização, VDJviz, impõe um volume de dados máximo para se carregar na plataforma.
+
 ## Execução da análise
 Para analisar a amostra recém obtida, será executado o *software* MiXCR. Dentro do diretório criado anteriormente, onde a amostra se encontra, execute na linha de comando:
 ```sh
