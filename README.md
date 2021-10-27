@@ -50,10 +50,15 @@ conda install -c imperial-college-research-computing mixcr -y
 conda install -c bioconda sra-tools -y
 ```
 ## Coleta dos dados 
-Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados SRA do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresenta melhora no quadro clínico. O download da amostra é descrita a seguir:
+Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados [SRA](https://www.ncbi.nlm.nih.gov/sra) do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresenta melhora no quadro clínico. 
+- O *download* da amostra é descrita a seguir:
 ```sh
 fasterq-dump --split-files SRR11961719 
 ```
+- Uma vez baixado, se obterá apenas um subconjunto dessa amostra total:
+```sh
+FALAR COM WALDEYR PRA PEGAR O CÓDIGO
+```sh
 ## Execução da análise
 Para analisar a amostra recém obtida, será executado o *software* MiXCR. Dentro do diretório criado anteriormente, onde a amostra se encontra, execute na linha de comando:
 ```sh
@@ -65,5 +70,9 @@ mixcr analyze amplicon --species hs \
         --receptor-type IGH \
        SRR11961719_1_subread.fastq SRR11961719_2_subread.fastq analysis
 ```
-
+Diversos arquivos serão gerados. Todavia, o arquivo de interesse será ```analysis.clonotype_IGH.txt```. Nesse arquivo conterá, em formato de tabela, as sequências BCR montadas em linhas e as variáveis em colunas. 
+## Visualização dos dados
+O arquivo ```analysis.clonotype_IGH.txt``` será visualizado utilizando a ferramenta [VDJviz](https://vdjviz.cdr3.net/). 
+- ATENÇÃO:
+O VDJviz é uma ferramente de demonstração. Na prática, uma fez com que o cadastro seja feito, cada aluno terá acesso à ferramenta algumas poucas vezes. Por isso, certifique-se de que o arquivo ```analysis.clonotype_IGH.txt``` seja obtido adequedamente e antes de se realizar o cadastro no VDJviz. Peço desculpas quanto à essa questão, todavia essa ferramenta web foi a mais simples e acessível que pudemos encontrar para visualizar os dados obtidos pelas etapas anteriores. 
 
