@@ -12,8 +12,9 @@ Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês,
 As instruções para instalação e executação de ambientes conda pode ser encontradas [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas básicas serão descritas a seguir:
 - Abra o terminal e digite:
 ```sh
-cd 
-cd/tmp
+cd ..
+cd .. 
+cd /tmp
 ```
 - Verifique se a função ```curl``` está instalada:
 ```sh
@@ -50,7 +51,7 @@ conda activate {nome_ambiente}
 - Para instalar os softwares necessários:
 ```sh
 conda install -c imperial-college-research-computing mixcr -y
-conda install -c bioconda sra-tools -y
+conda install -c bioconda sra-tools seqtk -y
 ```
 ## Coleta dos dados 
 Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados [SRA](https://www.ncbi.nlm.nih.gov/sra) do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresenta melhora no quadro clínico. 
@@ -58,9 +59,10 @@ Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](h
 ```sh
 fasterq-dump --split-files SRR11961719 
 ```
-- Uma vez baixado, se obterá apenas um subconjunto dessa amostra total:
+- Uma vez baixado, se obterá apenas um subconjunto de 10000 *reads* dessa amostra total:
 ```sh
-FALAR COM WALDEYR PRA PEGAR O CÓDIGO
+seqtk sample -s100 SRR11961719_1.fastq 10000 > SRR11961719_subreads_1.fastq
+seqtk sample -s100 SRR11961719_2.fastq 10000 > SRR11961719_subreads_2.fastq
 ```
 - A coleta de apenas um porção aleatória da amostra em questão tem dois propósitos principais:
 1. Facilitar a análise dos dados principalmente para computadores de baixa capacidade de processamento.
