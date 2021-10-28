@@ -2,7 +2,7 @@
 ## Análise de Repertório (AIRR-Seq)
 
 ## Informações Gerais
-
+- Acesso aos dados para usuários Windows [aqui]
 ## *Softwares* Necessários:
 - [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
