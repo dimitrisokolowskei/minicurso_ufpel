@@ -77,7 +77,7 @@ mixcr analyze amplicon --species hs \
         --3-end j-primers \
         --adapters adapters-present \
         --receptor-type IGH \
-       SRR11961719_1_subreads.fastq SRR11961719_2_subreads.fastq analysis
+       SRR11961719_subreads_1.fastq SRR11961719_subreads_2.fastq analysis
 ```
 Diversos arquivos serão gerados. Todavia, o arquivo de interesse será ```analysis.clonotype.IGH.txt```. Nesse arquivo conterá, em formato de tabela, as sequências BCR montadas em linhas e as variáveis em colunas. 
 ## Visualização dos dados
