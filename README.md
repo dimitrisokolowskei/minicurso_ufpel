@@ -57,7 +57,7 @@ conda install -c bioconda sra-tools seqtk -y
 Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados [SRA](https://www.ncbi.nlm.nih.gov/sra) do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresentava melhora no quadro clínico. 
 - O *download* da amostra é descrita a seguir:
 ```sh
-fasterq-dump --split-files SRR11961719 
+fastq-dump --split-files SRR11961719 
 ```
 - Uma vez baixado, se obterá apenas um subconjunto de 10000 *reads* dessa amostra total:
 ```sh
@@ -77,7 +77,7 @@ mixcr analyze amplicon --species hs \
         --3-end j-primers \
         --adapters adapters-present \
         --receptor-type IGH \
-       SRR11961719_1_subread.fastq SRR11961719_2_subread.fastq analysis
+       SRR11961719_1_subreads.fastq SRR11961719_2_subreads.fastq analysis
 ```
 Diversos arquivos serão gerados. Todavia, o arquivo de interesse será ```analysis.clonotype.IGH.txt```. Nesse arquivo conterá, em formato de tabela, as sequências BCR montadas em linhas e as variáveis em colunas. 
 ## Visualização dos dados
