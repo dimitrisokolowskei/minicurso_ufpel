@@ -1,8 +1,9 @@
 # Bioinformática Aplicada à Imunologia
 ## Análise de Repertório (AIRR-Seq)
+Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês, *AIRR-Seq*) emprega tecnologias de sequenciamento de alto rendimento (HTS) para estudar e compreender aspectos e dinâmicas de respostas adaptativa frente à diferentes estímulos antigênicos. Nessa etapa do minicurso, focaremos no AIRR-Seq de BCR/anticorpos.
 
 ## Informações Gerais
-- Acesso ao Google Drive [aqui](https://drive.google.com/drive/folders/1oAg514MXdfBF8yA-0093998vkIrcn_zR?usp=sharing)
+- Acesso ao Google Drive [aqui](https://drive.google.com/drive/folders/1oAg514MXdfBF8yA-0093998vkIrcn_zR?usp=sharing).
 ## *Softwares* Necessários:
 - [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
