@@ -54,7 +54,7 @@ conda install -c imperial-college-research-computing mixcr -y
 conda install -c bioconda sra-tools seqtk -y
 ```
 ## Coleta dos dados 
-Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados [SRA](https://www.ncbi.nlm.nih.gov/sra) do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresenta melhora no quadro clínico. 
+Os dados a serem analisados são oriundos do trabalho de [GALSON et al., 2020](https://www.frontiersin.org/articles/10.3389/fimmu.2020.605170/full). O banco de dados [SRA](https://www.ncbi.nlm.nih.gov/sra) do NCBI será acessado para coleta dos dados de sequenciamento. O número de acesso do projeto é ```SRX8505845``` e será analisado apenas a amostra ```SRR11961719``` para fins de ensino. A amostra em questão é de um homem, infectado com SARS-CoV-2, de 37.2 anos de idade e caucasiano. Encotrava-se em recuperação após ser internado em UTI e apresentava melhora no quadro clínico. 
 - O *download* da amostra é descrita a seguir:
 ```sh
 fasterq-dump --split-files SRR11961719 
