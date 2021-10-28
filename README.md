@@ -1,7 +1,9 @@
 # Bioinformática Aplicada à Imunologia
 ## Análise de Repertório (AIRR-Seq)
 
-## Pré-requisitos:
+## Informações Gerais
+
+## *Softwares* Necessários:
 - [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
 - [VDJviz](https://vdjviz.cdr3.net/): VDJviz é um visualizador browser de caracteristicas e parâmetros de dados de AIRR-Seq. 
@@ -74,9 +76,9 @@ mixcr analyze amplicon --species hs \
         --receptor-type IGH \
        SRR11961719_1_subread.fastq SRR11961719_2_subread.fastq analysis
 ```
-Diversos arquivos serão gerados. Todavia, o arquivo de interesse será ```analysis.clonotype_IGH.txt```. Nesse arquivo conterá, em formato de tabela, as sequências BCR montadas em linhas e as variáveis em colunas. 
+Diversos arquivos serão gerados. Todavia, o arquivo de interesse será ```analysis.clonotype.IGH.txt```. Nesse arquivo conterá, em formato de tabela, as sequências BCR montadas em linhas e as variáveis em colunas. 
 ## Visualização dos dados
-O arquivo ```analysis.clonotype_IGH.txt``` será visualizado utilizando a ferramenta [VDJviz](https://vdjviz.cdr3.net/). 
+O arquivo ```analysis.clonotype.IGH.txt``` será visualizado utilizando a ferramenta [VDJviz](https://vdjviz.cdr3.net/). 
 - ATENÇÃO:
-O VDJviz é uma ferramente de demonstração. Na prática, uma fez com que o cadastro seja feito, cada aluno terá acesso à ferramenta algumas poucas vezes. Por isso, certifique-se de que o arquivo ```analysis.clonotype_IGH.txt``` seja obtido adequedamente e antes de se realizar o cadastro no VDJviz. Peço desculpas quanto à essa questão, todavia essa ferramenta web foi a mais simples e acessível que pudemos encontrar para visualizar os dados obtidos pelas etapas anteriores. 
+O VDJviz é uma ferramente de demonstração (demo). Na prática, uma fez com que o cadastro seja feito, cada aluno terá acesso à ferramenta algumas poucas vezes. Por isso, certifique-se de que o arquivo ```analysis.clonotype.IGH.txt``` seja obtido adequadamente antes de se realizar o cadastro no VDJviz. Peço desculpas quanto à essa questão, todavia essa ferramenta *web* foi a mais simples e acessível que pudemos encontrar para visualizar os dados obtidos anteriormente. Instalar o VDJviz como servidor local pode ser feito e mais informações são encontrada [aqui](https://github.com/antigenomics/vdjviz). 
 
