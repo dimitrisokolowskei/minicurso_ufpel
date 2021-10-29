@@ -7,6 +7,8 @@ Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês,
 ## *Softwares* Necessários:
 - [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
+- [SRA Toolkit](https://github.com/ncbi/sra-tools): O SRA toolkit é uma coleção de ferramentas para, prioritariamente, coleta e processamento de dados do *Sequencing Read Archives* (SRA), um banco de dados de sequenciamento.
+- [Seqtk](https://github.com/lh3/seqtk): O seqtk é uma ferramenta para processamento de sequencias em formato FASTA ou FASTQ.  
 - [VDJviz](https://vdjviz.cdr3.net/): VDJviz é um visualizador browser de caracteristicas e parâmetros de dados de AIRR-Seq. 
 ## Jupyter Lab:
 O jupyterLab consiste em um ambiente de desenvolvimento integrado (IDE) *web*. A partir do JupyterLab pode-se executar interfaces apropriadas para condução de *workflows* em areas como ciências de dados e computação científica. Para fins de minicurso, iremos utilizar o JupyterLab para condução das análises práticas de AIRR-Seq. Para se der acesso ao ambiente para as análises clique [aqui](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/HEAD?urlpath=lab/tree/demo).   
@@ -14,7 +16,6 @@ O jupyterLab consiste em um ambiente de desenvolvimento integrado (IDE) *web*. A
 ## Criação do ambiente para análises
 - Deverá ser criado um abiente específico, onde as ferramentas serão instaladas:
 ```sh
-cd # Voltar para o diretório /home/username
 mkdir airr_seq # Criar um diretório específico
 cd airr_seq # Entra no diretório recém criado
 conda activate --name {nome_ambiente} python=3 -y # Cria o ambiente
