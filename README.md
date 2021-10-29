@@ -8,33 +8,8 @@ Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês,
 - [Conda](https://docs.conda.io/en/latest/): Conda consiste em um sistema de administração de pacotes e ambientes, de codigo aberto, que possibilita a instalação e fácil execução de pacotes de softwares e suas respectivas dependências. 
 - [MiXCR](https://mixcr.readthedocs.io/en/master/): O pacote de software MiXCR é uma ferramenta rápida e precisa para análise de sequenciamento de receptores de linfócitos B e T.
 - [VDJviz](https://vdjviz.cdr3.net/): VDJviz é um visualizador browser de caracteristicas e parâmetros de dados de AIRR-Seq. 
-## Instalação Conda:
-As instruções para instalação e executação de ambientes conda pode ser encontradas [aqui](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04). Todavia, os comandos e etapas básicas serão descritas a seguir:
-- Abra o terminal e digite:
-```sh
-cd ..
-cd .. 
-cd /tmp
-```
-- Verifique se a função ```curl``` está instalada:
-```sh
-curl --help
-sudo apt-get install curl -y # Execute esse código para instalar
-```
-- Fazer o *download* do arquivo de instalação:
-```sh
-curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh
-```
-- Ainda dentro do diretório ```/tmp```digite:
-```sh
-bash anaconda.sh 
-```
-Aperte ```ENTER``` ou ```yes``` toda vez que for requerido.
-- Para ativar a instalação escreva:
-```sh
-source ~/.bashrc
-```
-Após o comando, será criado automaticamente um ambiente ```(base)``` 
+## Jupyter Lab:
+O jupyterLab consiste em um ambiente de desenvolvimento integrado (IDE) *web*. A partir do JupyterLab pode-se executar interfaces apropriadas para condução de *workflows* em areas como ciências de dados e computação científica. Para fins de minicurso, iremos utilizar o JupyterLab para condução das análises práticas de AIRR-Seq. Para se der acesso ao ambiente para as análises clique [aqui](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/HEAD?urlpath=lab/tree/demo).   
 
 ## Criação do ambiente para análises
 - Deverá ser criado um abiente específico, onde as ferramentas serão instaladas:
