@@ -2,7 +2,7 @@
 
 source /srv/conda/etc/profile.d/conda.sh
 
-conda create --name R python=3.9 -y
+conda create --name R -y
 conda activate R
 
 conda install mamba -n base -c conda-forge -y
