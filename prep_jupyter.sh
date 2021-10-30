@@ -23,9 +23,7 @@ conda install -c bioconda sra-tools -y
 conda install -c bioconda entrez-direct -y
 conda install -c bioconda fastqc -y
 conda install -c bioconda fastp -y
-conda install -c bioconda spades -y
 conda install -c bioconda quast -y
-conda install -c bioconda star -y
 conda install -c bioconda htseq -y
 conda install -c bioconda seqtk -y
 conda install -c bioconda samtools -y
