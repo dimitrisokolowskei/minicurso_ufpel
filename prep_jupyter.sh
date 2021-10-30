@@ -34,6 +34,6 @@ R -e "install.packages('BiocManager',repos='https://cran.ma.imperial.ac.uk/')"
 R -e "install.packages('IRkernel')"
 R -e "IRkernel::installspec()"
 
-R -e "BiocManager::install(c('limma','edgeR','Glimma','org.Mm.eg.db', 'statmod',force=TRUE))"
+R -e "BiocManager::install(c('limma','edgeR','Glimma','org.Mm.eg.db', 'statmod'))"
 
 pip3 install IPython
