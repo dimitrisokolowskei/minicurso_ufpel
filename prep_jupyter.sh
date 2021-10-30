@@ -27,6 +27,7 @@ conda install -c bioconda htseq -y
 conda install -c bioconda seqtk -y
 conda install -c bioconda samtools -y
 conda install -c bioconda r-xml -y
+conda install -c bioconda bioconductor-deseq2 -y
 
 R -e "install.packages('BiocManager',repos='https://cran.ma.imperial.ac.uk/')"
 
