@@ -1,7 +1,7 @@
 # Bioinformática Aplicada à Imunologia
 ![](img/minicurso.png)
 ## Análise de Repertório (AIRR-Seq)
-Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês, *Adaptive Immune Receptor Repertoire Sequencing*,AIRR-Seq) emprega tecnologias de sequenciamento de alto rendimento (do inglês, *High Throughput Sequencing* HTS) para estudar e compreender aspectos e dinâmicas de respostas adaptativa frente à diferentes estímulos antigênicos. Nessa etapa do minicurso, focaremos no AIRR-Seq de BCR/anticorpos.
+Sequenciamento de repertório de receptores de imunidade adaptativa (do inglês, *Adaptive Immune Receptor Repertoire Sequencing*, AIRR-Seq) emprega tecnologias de sequenciamento de alto rendimento (do inglês, *High Throughput Sequencing*, HTS) para estudar e compreender aspectos e dinâmicas de respostas adaptativa frente à diferentes estímulos antigênicos. Nessa etapa do minicurso, focaremos no AIRR-Seq de BCR/anticorpos.
 
 ## Informações Gerais
 - Acesso ao Google Drive [aqui](https://drive.google.com/drive/folders/1oAg514MXdfBF8yA-0093998vkIrcn_zR?usp=sharing).
