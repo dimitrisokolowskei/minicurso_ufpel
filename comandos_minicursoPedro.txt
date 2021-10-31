@@ -1,0 +1,27 @@
+library(dplyr)
+library(DESeq2)
+matrix_exp<-read.csv("ExonCount.csv")
+sample<-data.frame(conditions=c("C","C","C","C","C","C","C","C","C","C","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S"))
+rownames(sample)<-colnames(matrix_exp)
+rownames(matrix_exp)<-(matrix_exp$ID)
+matrix_exp$ID<-NULL
+matrix_exp$X<-NULL
+matrix_exp<-as.matrix(matrix_exp)
+sample$conditions<-as.factor(sample$conditions)
+
+
+deseq2Data <- DESeqDataSetFromMatrix(countData=matrix_exp, colData=sample, design= ~ conditions)
+dim(deseq2Data)
+dim(deseq2Data[rowSums(counts(deseq2Data)) > 5, ])
+
+deseq2Data <- deseq2Data[rowSums(counts(deseq2Data)) > 5, ]
+deseq2Data <- DESeq(deseq2Data)
+
+deseqRes<- results(deseq2Data,contrast=c("conditions","S","C"))
+summary(deseqRes)
+plotMA(deseqRes)
+
+library(ggplot2)
+library(scales)
+
+
