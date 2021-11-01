@@ -67,9 +67,11 @@ A partir do sequênciamento de RNA utilizando sequenciadores de próxima geraç�
 
 ## Preparação do ambiente no Jupyter
 - No terminal do jupyter digite:
-        git clone https://github.com/dimitrisokolowskei/minicurso_ufpel.git # Baixar repositório
-        chmod u+x minicurso_ufpl/prep_jupyter.sh # Tornar arquivo executácel
-        .minicurso_ufpl/prep_jupyter.sh # Executar arquivo     
+```sh
+git clone https://github.com/dimitrisokolowskei/minicurso_ufpel.git # Baixar repositório
+chmod u+x minicurso_ufpl/prep_jupyter.sh # Tornar arquivo executácel
+.minicurso_ufpl/prep_jupyter.sh # Executar arquivo     
+```
                 
 ## Exemplos de análises
 Poderão ser encontrados no arquivo do Drive.
