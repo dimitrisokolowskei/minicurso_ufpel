@@ -66,10 +66,10 @@ O VDJviz é uma ferramente de demonstração (demo). Na prática, uma fez com qu
 A partir do sequênciamento de RNA utilizando sequenciadores de próxima geração (NGS) como o Illumina, podemos fazer diversas análises relacionadas com a expressão gênica, que poderão fornecer informações sobre o estado e a dinâmica das células, em imunologia pode servir de base para entender os mecanismos da resposta imune. Nessa etapa do minicurso veremos um pouco como são feitas as análises de RNA-seq no programa R.
 
 ## Preparação do ambiente no Jupyter
-        - No terminal do jupyter digite:
-                git clone https://github.com/dimitrisokolowskei/minicurso_ufpel.git # Baixar repositório
-                chmod u+x minicurso_ufpl/prep_jupyter.sh # Tornar arquivo executácel
-                .minicurso_ufpl/prep_jupyter.sh # Executar arquivo     
+- No terminal do jupyter digite:
+        git clone https://github.com/dimitrisokolowskei/minicurso_ufpel.git # Baixar repositório
+        chmod u+x minicurso_ufpl/prep_jupyter.sh # Tornar arquivo executácel
+        .minicurso_ufpl/prep_jupyter.sh # Executar arquivo     
                 
 ## Exemplos de análises
 Poderão ser encontrados no arquivo do Drive.
