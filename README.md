@@ -74,4 +74,4 @@ chmod u+x minicurso_ufpl/prep_jupyter.sh # Tornar arquivo executácel
 ```
                 
 ## Exemplos de análises
-Poderão ser encontrados no arquivo do Drive.
+Poderão ser encontrados no arquivo do Drive, através do arquivo AnáliseRna-seq.ipynb que precisará ser baixado e aberto no ambiente jupyter.
