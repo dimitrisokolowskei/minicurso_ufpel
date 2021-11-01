@@ -63,7 +63,7 @@ O arquivo ```analysis.clonotype.IGH.txt``` será visualizado utilizando a ferram
 O VDJviz é uma ferramente de demonstração (demo). Na prática, uma fez com que o cadastro seja feito, cada aluno terá acesso à ferramenta algumas poucas vezes. Por isso, certifique-se de que o arquivo ```analysis.clonotype.IGH.txt``` seja obtido adequadamente antes de se realizar o cadastro no VDJviz. Peço desculpas quanto à essa questão, todavia essa ferramenta *web* foi a mais simples e acessível que pudemos encontrar para visualizar os dados obtidos anteriormente. Instalar o VDJviz como servidor local pode ser feito e mais informações são encontrada [aqui](https://github.com/antigenomics/vdjviz). 
 
 ## Análise de expressão diferencial com RNA-seq
-A partir do sequênciamento de RNA utilizando sequenciadores de próxima geração (NGS) como o Illumina, podemos fazer diversas análises relacionadas com a expressão gênica, que poderão fornecer informações sobre o estado e a dinâmica das células, em imunologia pode servir de base para entender os mecanismos da resposta imune. Nessa etapa do minicurso veremos um pouco como são feitas as análises de RNA-seq no programa R.
+A partir do sequênciamento de RNA utilizando sequenciadores de próxima geração (NGS), como o Illumina, podemos fazer diversas análises relacionadas com a expressão gênica, que poderão fornecer informações sobre o estado e a dinâmica das células, em imunologia pode servir de base para entender os mecanismos da resposta imune. Nessa etapa do minicurso veremos um pouco como são feitas as análises de RNA-seq no programa R.
 
 ## Preparação do ambiente no Jupyter
 - No terminal do jupyter digite:
